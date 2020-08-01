@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/uysimty/contributes/pagy
+GIT
+  remote: https://github.com/Uysim/pagy.git
+  revision: 9ef7045bbefd1595bc3bce697f1ab9d44f767b91
+  branch: cursor-paginate
   specs:
     pagy (2.0.0)
 

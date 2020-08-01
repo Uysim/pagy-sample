@@ -27,9 +27,11 @@
 <% if params[:after].present? %>
   <% if @pagy.has_more? %>
     <%= link_to 'Next', url_for(after: @posts.last.id) %>
+    <%= link_to 'Prev', url_for(before: @posts.first.id) %>
   <% end %>
 <% else %>
   <% if @pagy.has_more? %>
+    <%= link_to 'Prev', url_for(after: @posts.first.id) %>
     <%= link_to 'Next', url_for(before: @posts.last.id) %>
   <% end %>
 <% end %>

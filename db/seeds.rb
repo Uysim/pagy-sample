@@ -4,5 +4,5 @@ end
 
 
 1.upto(100) do |i|
-  Post.create(name: "post#{i}", created_at: (100-i).minutes.ago)
+  Post.create(title: "post#{i}", created_at: (100-i).minutes.ago)
 end
